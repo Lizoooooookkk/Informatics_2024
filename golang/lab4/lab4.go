@@ -16,7 +16,7 @@ func RunLab4() {
 func TaskA(xn, xk, deltax, a, b float64) []float64 {
 	var yValues []float64
 	for x := xn; x <= xk; x += deltax {
-		yValues = append(yValues, Calculate_y(x, a, b))
+		yValues = append(yValues, CalculateY(x, a, b))
 	}
 	return yValues
 }
@@ -24,12 +24,12 @@ func TaskA(xn, xk, deltax, a, b float64) []float64 {
 func TaskB(values []float64, a, b float64) []float64 {
 	var yValues []float64
 	for _, x := range values {
-		yValues = append(yValues, Calculate_y(x, a, b))
+		yValues = append(yValues, CalculateY(x, a, b))
 	}
 	return yValues
 }
 
-func Calculate_y(x float64, a float64, b float64) float64 {
+func CalculateY(x float64, a float64, b float64) float64 {
 	y := math.Pow(a+b*x, 2.5) / (1 + math.Log10(a+b*x))
 	return y
 }
