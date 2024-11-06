@@ -30,7 +30,6 @@ func TaskB(values []float64, a, b float64) []float64 {
 }
 
 func Calculate_y(x float64, a float64, b float64) float64 {
-
 	y := math.Pow(a+b*x, 2.5) / (1 + math.Log10(a+b*x))
 	return y
 }
