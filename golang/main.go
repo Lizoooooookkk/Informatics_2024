@@ -13,5 +13,4 @@ func main() {
 	fmt.Println("Мошкова Елизавета Алексеевна ")
 	lab6.RunLab6()
   lab4.RunLab4()
-
 }
